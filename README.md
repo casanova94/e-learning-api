@@ -59,10 +59,25 @@
 
 ## Instalación
 1. Clonar o descargar este repositorio
-2. Guardar ficheros en el directorio web raíz
-3. Crear una base de datos con cualquier nombre
-4. Configurar acceso a la base de datos por medio del archivo .env del proyecto
-5. Ubicate por medio de consola en la carpeta del proyecto
+2. Guardar los ficheros descargados en el directorio web raíz
+3. Entrar a la carpeta del proyecto y abrir la consola desde ahi
+4. Instalar las librerías del framework por medio de composer
+```bash
+composer update
+```
+5. Copiar el archivo .env.example ubicado dentro de la carpeta raíz del proyecto y pegarlo en la misma ubicación
+6. Renombrar el archivo pegado anteriormente a .env
+7. Generar una llave aleatoria para la app por medio de artisan
+```bash
+php artisan key:generate
+```
+8. Crear una nueva base de datos con cualquier nombre
+9. Configurar los accesos de la base de datos creada en el archivo .env
+```bash
+DB_DATABASE= nombredelabase
+DB_USERNAME= nombredelusuario
+DB_PASSWORD= password
+```
 6. Correr migración 
 ```bash
 php artisan migrate

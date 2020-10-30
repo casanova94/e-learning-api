@@ -55,7 +55,7 @@
 * Composer 2.0
 
 ## Framework utilizado
-* Laravel 6
+* Laravel 6 - Se eligió este framework de PHP debido a la simplicidad de su sistema de rutas y el soporte que tiene para la generación de API's.
 
 ## Instalación
 1. Clonar o descargar este repositorio
